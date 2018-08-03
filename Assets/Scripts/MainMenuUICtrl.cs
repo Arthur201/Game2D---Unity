@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine;
 
 public class MainMenuUICtrl : MonoBehaviour {
 
