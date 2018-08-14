@@ -18,5 +18,5 @@ public class SFXManager : MonoBehaviour {
 	public void ShowCoinParticles(GameObject obj){
 		Instantiate(CoinParticles, obj.transform.position, Quaternion.identity);
 	}
-
+ 
 }
