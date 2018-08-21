@@ -316,6 +316,12 @@ MonoBehaviour:
   spawnPoint: {fileID: 1492487937}
   playerPrefab: {fileID: 1892443958611096, guid: a75c63edbdf753242919ba44cf1345bf,
     type: 2}
+  ui:
+    hud:
+      txtcoinCount: {fileID: 499863713}
+      txtLifeCount: {fileID: 1658523349}
+      txtTimer: {fileID: 773828561}
+      hudPanel: {fileID: 1717301418}
   timeToRespawn: 2
 --- !u!4 &180242801
 Transform:
@@ -1132,9 +1138,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2b77d48304b2fdc43bdd7d102244751a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: aebc4a146441c8b449e696b87818b919, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.174
+  m_Volume: 0.171
   m_Pitch: 1
   Loop: 1
   Mute: 0

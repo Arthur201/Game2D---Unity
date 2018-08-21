@@ -15,7 +15,9 @@ public class GM : MonoBehaviour {
 	
 	public GameObject playerPrefab;
 
-	
+	public UI ui;
+
+	GameData data = new GameData();
 
 	PlayerCtrl player;
 
@@ -46,8 +48,16 @@ public class GM : MonoBehaviour {
 				player = obj.GetComponent<PlayerCtrl>();
 			}
 		}
-		
+		DisplayHudData();
 	}
+
+	void DisplayHudData(){
+		ui.hud.txtcoinCount.text = "x " + data.coinCount;
+	}
+	public void IncrementCoinCount() {
+		data.coinCount++;
+	}
+
 	public void RespawnPlayer(){
 		Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
 
