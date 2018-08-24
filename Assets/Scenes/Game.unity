@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 64177356}
   - component: {fileID: 64177358}
   - component: {fileID: 64177357}
+  - component: {fileID: 64177359}
   m_Layer: 5
   m_Name: TextCoin
   m_TagString: Untagged
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.47450984, b: 0, a: 1}
+  m_Color: {r: 0.8602941, g: 0.49132022, b: 0.1581423, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -260,6 +261,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64177355}
+--- !u!114 &64177359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 64177355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &120094451
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +384,7 @@ GameObject:
   - component: {fileID: 171184077}
   - component: {fileID: 171184079}
   - component: {fileID: 171184078}
+  - component: {fileID: 171184080}
   m_Layer: 5
   m_Name: TextGameOver
   m_TagString: Untagged
@@ -433,6 +449,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 171184076}
+--- !u!114 &171184080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 171184076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.007352948, g: 0.003640679, b: 0.0002703288, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &180242799
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +500,10 @@ MonoBehaviour:
       txtLifeCount: {fileID: 1658523349}
       txtTimer: {fileID: 773828561}
       hudPanel: {fileID: 1717301418}
+    gameOver:
+      txtcoinCount: {fileID: 64177357}
+      txtTimer: {fileID: 293545684}
+      gameOverPanel: {fileID: 2032127038}
   timeToRespawn: 2
 --- !u!4 &180242801
 Transform:
@@ -499,6 +533,7 @@ GameObject:
   - component: {fileID: 293545683}
   - component: {fileID: 293545685}
   - component: {fileID: 293545684}
+  - component: {fileID: 293545686}
   m_Layer: 5
   m_Name: 'TextTimer '
   m_TagString: Untagged
@@ -536,7 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.47450984, b: 0, a: 1}
+  m_Color: {r: 0.8602941, g: 0.49132022, b: 0.1581423, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -563,6 +598,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 293545682}
+--- !u!114 &293545686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 293545682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &319765201
 Prefab:
   m_ObjectHideFlags: 0
